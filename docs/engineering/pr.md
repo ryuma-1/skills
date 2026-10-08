@@ -22,6 +22,8 @@ Three sections, in this order:
 - **Evidence**: a before and after. A screenshot is the strongest evidence when the change is visual and the [environment](https://www.aihero.dev/ai-coding-dictionary/environment) can take one. Otherwise, use the exact test that failed and now passes, written as pseudocode, or the console output that changed.
 - **Merge Danger**: whether the change is a **one-way door** or a **two-way door**, and its **blast radius**. A two-way door is cheap to reverse; a one-way door (a destructive migration, a public API removal, a hard-to-reverse decision) is not. Blast radius names what could break if the change is wrong: layout shift, consumers of an API, mobile responsiveness.
 
+The title is written in English and the body in Japanese. The section headings and field labels (Summary, Evidence, Before, After, Merge Danger, Door, Blast Radius) stay in English so every PR has the same structure, and code, identifiers, and command output are never translated.
+
 The door call is the leading idea. It changes "is this safe to merge?" from a gut feeling into a stated claim the reviewer can disagree with. It also tells them where to spend their [human review](https://www.aihero.dev/ai-coding-dictionary/human-review). Skim a two-way door with a small blast radius, and read a one-way door slowly.
 
 ## Common questions
@@ -66,6 +68,7 @@ Not by itself. One user's approach is a standing instruction in the repo's agent
 
 - You can tell what the PR changes from the Summary visual alone, before opening the diff.
 - The body has no preamble: it starts at the Summary heading.
+- The title is in English and the body prose is in Japanese, under the same English headings.
 - The Evidence section shows a before and an after, not a claim that tests pass.
 - Every PR states a door and a blast radius, and the one-way doors are the ones you slow down on.
 

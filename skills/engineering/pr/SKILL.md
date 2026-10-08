@@ -32,6 +32,10 @@ Use this template for writing the PR body:
 <optional: potential ramifications of merge>
 ```
 
+## Language
+
+Write the PR title in English. Write the PR body in Japanese, keeping the template's section headings and field labels (`Summary`, `Evidence`, `Before`, `After`, `Merge Danger`, `Door`, `Blast Radius`) verbatim. Code, identifiers, and command output stay as they are.
+
 ## Sections
 
 Skip all preambles and keep prose brief. Use the user's domain language from `GLOSSARY.md`.
